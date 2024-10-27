@@ -1,9 +1,11 @@
 import {useState} from 'react';
-import {Box, Button, Heading, Image, Text} from '@chakra-ui/react';
+import {Box, Button, Image} from '@chakra-ui/react';
 import {Fade} from 'react-awesome-reveal';
 import FsLightbox from 'fslightbox-react';
 import SecondaryFont from "@/components/texts/SecondaryFont";
 import {FaArrowLeft, FaArrowRight} from "react-icons/fa";
+import PrimaryFont from "@/components/texts/PrimaryFont";
+import TextFont from "@/components/texts/TextFont";
 
 const images = [
     '/images/Image1.jpeg',
@@ -60,36 +62,27 @@ const OpeningSection = () => {
                 textTransform="uppercase"
                 textAlign="center"
             >
-                <SecondaryFont className={"text-xl"}>DEAR MR-MRS-MS,</SecondaryFont>
-                <SecondaryFont className={"text-xl"}>FAMILY & FRIENDS</SecondaryFont>
+                <SecondaryFont className={"text-xs"}>DEAR MR-MRS-MS,</SecondaryFont>
+                <SecondaryFont className={"text-xs mb-5"}>FAMILY & FRIENDS</SecondaryFont>
             </Box>
             <Box>
                 <Fade duration={1000} direction="up" triggerOnce>
-                    <Heading
-                        fontSize="32px"
-                        padding="24px 0"
-                        fontFamily="butler_normal"
-                        fontWeight="500"
-                    >
+                    <PrimaryFont className={"text-3xl mb-5"}>
                         Welcome to
                         <br/>
                         Tiffany & Jared’s
                         <br/>
                         Wedding Website
-                    </Heading>
+                    </PrimaryFont>
                 </Fade>
             </Box>
             <Box>
                 <Fade duration={1000} direction="up" triggerOnce>
-                    <Text
-                        padding="0px 10% 24px"
-                        fontSize="18px"
-                        marginBottom="18px"
-                        fontFamily="newsreader_italic"
+                    <TextFont fontStyle="italic" className="mb-5 px-20"
                     >
                         Together with joyful hearts and the grace of God, we joyfully
                         announce the upcoming of our marriage.
-                    </Text>
+                    </TextFont>
                 </Fade>
             </Box>
 
