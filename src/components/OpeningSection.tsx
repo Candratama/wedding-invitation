@@ -143,7 +143,7 @@ const OpeningSection = () => {
                         bottom="-50px"
                         alignSelf="center"
                         border="1px solid rgb(26, 27, 29)"
-                        borderRadius={'0px'}
+                        borderRadius={'6px'}
                         cursor="pointer"
                         height="30px"
                         lineHeight="1"
@@ -169,7 +169,7 @@ const OpeningSection = () => {
                         right="120px" // Swapped position
                         bottom="-50px"
                         alignSelf="center"
-                        borderRadius={'0px'}
+                        borderRadius={'6px'}
                         // background="bgSecondary"
                         border="1px solid rgb(26, 27, 29)"
                         cursor="pointer"

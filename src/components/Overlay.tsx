@@ -41,8 +41,8 @@ const Overlay: React.FC<OverlayProps> = ({handleButtonClick}) => {
             setTimeout(() => {
                 handleButtonClick();
             }, 1000); // Duration of the wipeUp animation
-        }, 1000); // 1-second gap
-
+        }, 1000); // 3-second gap
+        
     };
 
     return (

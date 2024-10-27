@@ -7,13 +7,13 @@ interface RightDesktopProps {
     isOverlayVisible: boolean;
 }
 
-const RightDesktop: React.FC<RightDesktopProps> = ({isOverlayVisible}) => {
+const RightDesktop: React.FC<RightDesktopProps> = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
     return (
-        <Box className={isOverlayVisible ? 'no-scroll' : ''}>
+        <Box>
             <WelcomeSection/>
             <OpeningSection/>
         </Box>
