@@ -41,7 +41,7 @@ export default function Home() {
                 <LeftDesktop/>
             </Box>
             <Box width={{base: "100%", lg: "500px"}} position="relative">
-                <RightDesktop/>
+                <RightDesktop isOverlayVisible/>
                 {isOverlayVisible && (
                     <Overlay isAnimating={isAnimating} handleButtonClick={handleButtonClick}/>
                 )}

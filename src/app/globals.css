@@ -60,8 +60,7 @@ body {
 
 @font-face {
     font-family: 'Newsreader';
-    src: url('/fonts/Newsreader_Italic.woff2') format('woff2'),
-    url('/fonts/Newsreader_Italic.woff') format('woff');
+    src: url('/fonts/Newsreader_Italic.woff2') format('woff2');
     font-weight: 400;
     font-style: italic;
 }
