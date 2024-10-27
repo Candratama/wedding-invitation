@@ -26,7 +26,6 @@ const moveUpDown = keyframes`
 `;
 
 interface OverlayProps {
-    isAnimating: boolean;
     handleButtonClick: () => void;
 }
 
@@ -42,7 +41,7 @@ const Overlay: React.FC<OverlayProps> = ({handleButtonClick}) => {
                 handleButtonClick();
             }, 1000); // Duration of the wipeUp animation
         }, 1000); // 3-second gap
-        
+
     };
 
     return (
@@ -91,6 +90,7 @@ const Overlay: React.FC<OverlayProps> = ({handleButtonClick}) => {
                     <Button
                         className="mt-[30vh]"
                         border="2px solid white"
+                        borderRadius={'6px'}
                         onClick={handleClick}
                         loading={isLoading}
                         loadingText="Loading..."

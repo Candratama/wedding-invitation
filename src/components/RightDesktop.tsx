@@ -1,19 +1,17 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Box} from '@chakra-ui/react';
 import WelcomeSection from "@/components/WelcomeSection";
 import OpeningSection from "@/components/OpeningSection";
 
-interface RightDesktopProps {
-    isOverlayVisible: boolean;
-}
 
-const RightDesktop: React.FC<RightDesktopProps> = ({isOverlayVisible}) => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
+const RightDesktop = () => {
     return (
-        <Box className={!isOverlayVisible ? 'no-scroll' : ''}>
+        <Box
+            width={{base: '100%', lg: '500px'}}
+            overflowY="auto"
+            height="100vh"
+            marginLeft={{base: '0', lg: 'calc(100% - 500px)'}}
+        >
             <WelcomeSection/>
             <OpeningSection/>
         </Box>

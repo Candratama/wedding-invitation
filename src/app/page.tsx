@@ -12,7 +12,6 @@ const ReactPlayer = dynamic(() => import("react-player"), {ssr: false});
 
 export default function Home() {
     const [isOverlayVisible, setOverlayVisible] = useState(true);
-    const [isAnimating, setAnimating] = useState(false);
     const [isPlaying, setPlaying] = useState(false);
     const [isMuted, setMuted] = useState(true);
 
@@ -27,7 +26,6 @@ export default function Home() {
     }, [isOverlayVisible]);
 
     const handleButtonClick = () => {
-        setAnimating(true);
         setTimeout(() => setOverlayVisible(false), 1000); // Match the duration of the animation
     };
 
@@ -41,9 +39,9 @@ export default function Home() {
                 <LeftDesktop/>
             </Box>
             <Box width={{base: "100%", lg: "500px"}} position="relative">
-                <RightDesktop isOverlayVisible/>
+                <RightDesktop/>
                 {isOverlayVisible && (
-                    <Overlay isAnimating={isAnimating} handleButtonClick={handleButtonClick}/>
+                    <Overlay handleButtonClick={handleButtonClick}/>
                 )}
                 {!isOverlayVisible && (
                     <>
